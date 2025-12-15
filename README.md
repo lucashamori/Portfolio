@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio Pessoal | Lucas Hamori
 
-## Getting Started
+![GitHub top language](https://img.shields.io/github/languages/top/lucashamori/Portfolio?color=blue&style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/lucashamori/Portfolio?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow?style=for-the-badge)
 
-First, run the development server:
+Este repositório contém o código-fonte do meu portfólio pessoal. O objetivo deste projeto é apresentar meus trabalhos, habilidades e experiências profissionais, além de demonstrar conhecimentos técnicos em desenvolvimento web moderno.
+
+🔗 **Acesse o projeto online:** [lucashamori.github.io/Portfolio](https://lucashamori.github.io/Portfolio)
+
+## 🚀 Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+
+* **[Next.js 15](https://nextjs.org/)**: Framework React para produção, utilizado com **App Router**.
+* **[React](https://reactjs.org/)**: Biblioteca para construção de interfaces de usuário.
+* **[TypeScript](https://www.typescriptlang.org/)**: Superset do JavaScript que adiciona tipagem estática.
+* **[Tailwind CSS](https://tailwindcss.com/)**: Framework de utilitários CSS para estilização rápida e responsiva.
+* **GitHub Pages**: Plataforma de hospedagem estática.
+* **GitHub Actions**: Automação de CI/CD para deploy automático.
+
+## ⚙️ Configurações Importantes (GitHub Pages)
+
+Como este projeto é hospedado no **GitHub Pages** (que serve arquivos estáticos), foram necessárias configurações específicas no `next.config.ts`:
+
+1.  **Static Export (`output: 'export'`)**: Configura o Next.js para gerar arquivos HTML/CSS/JS estáticos em vez de depender de um servidor Node.js.
+2.  **Base Path**: Configurado para `/Portfolio` para garantir que os assets (CSS, imagens) sejam carregados corretamente na sub-pasta do GitHub.
+3.  **Image Optimization**: A otimização padrão de imagens do Next.js foi desativada (`unoptimized: true`) pois requer processamento no servidor, o que não é suportado nativamente no plano gratuito do GitHub Pages.
+
+## 📦 Como rodar o projeto localmente
+
+Siga os passos abaixo para baixar e executar o projeto na sua máquina:
+
+### Pré-requisitos
+* Node.js instalado (versão 18 ou superior recomendada).
+
+### Passo a passo
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/lucashamori/Portfolio.git](https://github.com/lucashamori/Portfolio.git)
+    ```
+
+2.  **Entre na pasta do projeto:**
+    ```bash
+    cd Portfolio
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+4.  **Execute o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+5.  Acesse `http://localhost:3000` no seu navegador.
+
+## 🛠️ Build e Deploy
+
+Para gerar a versão de produção localmente (simulando o que o GitHub Actions faz):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+npm run build
