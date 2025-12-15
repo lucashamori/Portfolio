@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
   // ATENÇÃO: Se o nome do seu repositório for diferente de "lucashamori.github.io"
   // (ex: se for "portfolio"), descomente a linha abaixo:
-  // basePath: '/nome-do-repositorio',
+  basePath: '/portfolio',
 };
 
 export default nextConfig;
