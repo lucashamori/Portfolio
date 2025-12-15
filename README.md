@@ -1,4 +1,4 @@
-# Portfólio Pessoal | Lucas Hamori
+# Portfólio Pessoal | Lucas Mori
 
 ![GitHub top language](https://img.shields.io/github/languages/top/lucashamori/Portfolio?color=blue&style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lucashamori/Portfolio?style=for-the-badge)
